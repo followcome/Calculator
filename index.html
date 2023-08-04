@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="mt-5 container-fluid">
+       <section class="row">
+        <div class="col-3 mx-auto">
+            <div class="shadow p-3 rounded-5">
+                <div class="bg-secondary text-center py-3">
+                    CALCULATOR
+                </div>
+                <div id="display" class="bg-light p-3 mt-3 text-end">
+                     
+                </div>
+                <div id="answer" class="bg-secondary p-3 mt-3 text-start"> 
+                   
+                </div>
+                <section class="my-4">
+                   <div class="d-flex justify-content-between">
+                       <button onclick="plusBtn()" class="btn btn-lg bg-light">+</button>
+                       <button onclick="minusBtn()" class="btn btn-lg bg-light">-</button>
+                       <button onclick="multiplicationBtn()" class="btn btn-lg bg-light">x</button>
+                       <button onclick="divisionBtn()" class="btn btn-lg bg-light">/</button>
+                   </div>
+                   <div class="row mt-3">
+                       <div class="col-10">
+                        <div class="d-flex justify-content-between mt-3">
+                            <button onclick="sevenBtn()" class="btn btn-lg bg-light">7</button>
+                            <button onclick="eightBtn()" class="btn btn-lg bg-light">8</button>
+                            <button onclick="nineBtn()" class="btn btn-lg bg-light">9</button>
+                           
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <button onclick="fourBtn()" class="btn btn-lg bg-light">4</button>
+                            <button onclick="fiveBtn()" class="btn btn-lg bg-light">5</button>
+                            <button onclick="sixBtn()" class="btn btn-lg bg-light">6</button>
+                          
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <button onclick="oneBtn()" class="btn btn-lg bg-light">1</button>
+                            <button onclick="twoBtn()" class="btn btn-lg bg-light">2</button>
+                            <button onclick="threeBtn()" class="btn btn-lg bg-light">3</button>
+                           
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <button onclick="zeroBtn()" class="btn btn-lg bg-light">0</button>
+                            <button onclick="dotBtn()" class="btn btn-lg bg-light">.</button>
+                            <button  onclick="clearBtn()"class="btn btn-lg bg-light">C</button>
+                            
+                        </div>
+                       </div>
+                       <div onclick="equalBtn()" class="col-2 mt-3 bg-primary text-center text-white p-3 align-item-center">
+                           <div  class="">=</div>
+                       </div>
+                   </div>
+                </section>
+             </div>
+        </div>
+       </section>
+    </div>
+
+    <script src="cal.js"></script>
+    
+</body>
+</html>
